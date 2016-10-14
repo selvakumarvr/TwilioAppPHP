@@ -31,3 +31,5 @@ $aryResponse = array();
     
     
     echo json_encode($aryResponse);
+
+    ?>
