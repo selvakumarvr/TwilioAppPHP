@@ -1,0 +1,42 @@
+exports.handler = function(context, event, callback) {
+    // With timezone:
+    // In Functions/Configure, add NPM name: moment-timezone, version: 0.5.14
+    // Timezone function reference: https://momentjs.com/timezone/
+    let moment = require('moment-timezone');
+    //a
+    // timezone needed for Daylight Saving Time adjustment
+    let timezone = event.timezone || 'America/New_York';
+    console.log("+ timezone: " + timezone);
+    //
+    const hour = moment().tz(timezone).format('H');
+    const dayOfWeek = moment().tz(timezone).format('d');
+
+    console.log("+ Hour : " + hour);
+    console.log("+ dayOfWeek : " + dayOfWeek);
+    if ((hour >= parseInt(event.monday_start) && hour < parseInt(event.monday_end)) && dayOfWeek == 1) {
+        // "open" from 9am to 5pm, PST.
+        response = event.monday;
+    } else if ((hour >= parseInt(event.tuesday_start) && hour <  parseInt(event.tuesday_end)) && dayOfWeek == 2) {
+        // "open" from 9am to 5pm, PST.
+        response = event.tuesday;
+    } else  if ((hour >= parseInt(event.wednesday_start) && hour <  parseInt(event.wednesday_end)) && dayOfWeek == 3) {
+        // "open" from 9am to 5pm, PST.
+        response = event.wednesday;
+
+    } else  if ((hour >= parseInt(event.thursday_start) && hour < parseInt(event.thursday_end)) && dayOfWeek == 4) {
+        // "open" from 9am to 5pm, PST.
+        response = event.thursday;
+    } else  if ((hour >=  parseInt(event.friday_start) && hour < parseInt(event.friday_end)) && dayOfWeek == 5) {
+        // "open" from 9am to 5pm, PST.
+        response = event.friday;
+    } else   if ((hour >= parseInt(event.saturday_start) && hour <  parseInt(event.saturday_end)) && dayOfWeek == 6) {
+        // "open" from 9am to 5pm, PST.
+        response = event.saturday;
+    }  else {
+       response='nomatch';
+    }
+
+
+    console.log("+ Time request: " + response);
+    callback(null, response);
+};

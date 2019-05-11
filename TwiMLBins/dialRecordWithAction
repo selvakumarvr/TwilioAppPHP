@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+ <Dial timeout='10' action='https://handler.twilio.com/twiml/EHbbcf2f501e9932f17d6b85f95a8fc379' callerId="+18635887853"><Number>+18104717767</Number>
+ </Dial>
+</Response>
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+<Pause length="5"/>
+<Play loop="1">https://TurtleClub.us/twilio/turtle-hotline-message.mp3</Play>
+<Record transcribe="true" transcribeCallback="http://twimlets.com/voicemail?Email=dave@escmi.com" />
+</Response>

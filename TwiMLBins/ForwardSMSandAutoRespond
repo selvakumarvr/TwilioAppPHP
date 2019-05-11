@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+    <Message to="+12392873432"> Sent To{{To}} From:{{From}} MSG: {{Body}}</Message>
+    <Message to="+12399139683"> Sent To{{To}} From:{{From}} MSG: {{Body}}</Message>
+    <Message>
+        Global Security Central Station does not accept incoming messages. Please call 1-800-762-4444
+    </Message>
+</Response>

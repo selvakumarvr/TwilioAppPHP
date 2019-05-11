@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+  <Dial>
+    <Sip>sip:gsisip001@gsi1.sip.us1.twilio.com</Sip>
+  </Dial>
+</Response>
