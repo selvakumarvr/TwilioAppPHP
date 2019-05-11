@@ -7,19 +7,15 @@ error_reporting(1);
 
     // Step 1: Get the Twilio-PHP library from twilio.com/docs/libraries/php,
     // following the instructions to install it with Composer.
-
- require_once ("inc/Services/Twilio.php");
-
-  
+    require_once "twilio-master/Twilio/autoload.php";
+    use Twilio\Rest\Client;
 
     // Step 2: Set our AccountSid and AuthToken from https://twilio.com/console
     $AccountSid = "AC6756c50775186e33f45e20acc9793ed8";
     $AuthToken = "80d5dc1daed8db4c696a374a17f7475a";
 
     // Step 3: Instantiate a new Twilio Rest Client
-  //  $client = new Client($AccountSid, $AuthToken);
-
-    $client = new Services_Twilio($AccountSid, $AuthToken);
+    $client = new Client($AccountSid, $AuthToken);
 ?>
 <!DOCTYPE html>
 <html>
