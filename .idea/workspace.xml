@@ -100,12 +100,11 @@
       <file leaf-file-name="report1.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/report1.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.26992288" vertical-offset="0" max-vertical-offset="5040">
-              <caret line="14" column="46" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
+            <state vertical-scroll-proportion="0.11968085" vertical-offset="2130" max-vertical-offset="4860">
+              <caret line="148" column="14" selection-start-line="148" selection-start-column="14" selection-end-line="148" selection-end-column="14" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
@@ -429,12 +428,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/report1.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26992288" vertical-offset="0" max-vertical-offset="5040">
-          <caret line="14" column="46" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
+        <state vertical-scroll-proportion="0.11968085" vertical-offset="2130" max-vertical-offset="4860">
+          <caret line="148" column="14" selection-start-line="148" selection-start-column="14" selection-end-line="148" selection-end-column="14" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>

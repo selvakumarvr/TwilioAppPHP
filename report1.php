@@ -146,19 +146,7 @@ $client = new Client($AccountSid, $AuthToken);
                     </label>
                 </div>
                 <div style="clear:both"></div>
-                <?php
-                foreach ($client->incomingPhoneNumbers->read() as $number) {
-                    $numeri[] = $number->phoneNumber;
-                    ?>
-                    <div class="checkbox" style="float:left; width:10%">
-                        <label>
-                            <input type="checkbox" name="number[]" value="<?php echo $number->phoneNumber; ?>" <?php if (in_array("$number->phoneNumber", $_POST['number'])) { echo "checked";} ?>>
-                            <span class="badge"><?php echo $number->phoneNumber; ?></span>
-                        </label>
-                    </div>
-                <?php
-                }
-                ?>
+              
             </div>
             <div style="clear:both"></div>
             <div class="col-md-2">
