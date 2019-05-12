@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa0ce96f-09a6-4b3b-b839-87892862a509" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TwiMLBins/DayHoursSelect" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TwiMLBins/ForwardSMSandAutoRespond" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TwiMLBins/ForwardSmsMsg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TwiMLBins/confirmAppoitment.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TwiMLBins/dialRecordCallerId" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TwiMLBins/dialRecordWithAction" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TwiMLBins/dialRecord" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TwiMLBins/forwardCallwhisper.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TwiMLBins/forwardWhisperFunciton.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TwiMLBins/sendMail.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TwiMLBins/sipInbound" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TwiMLBins/sipOutbound" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TwiMLBins/testingvoice.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/report1.php" />
     </list>
     <ignored path="TwilioAppPHP.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -59,16 +47,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sendMail.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TwiMLBins/sendMail.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
-              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="forwardWhisperFunciton.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TwiMLBins/forwardWhisperFunciton.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -99,31 +77,46 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="forwardCallwhisper.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="forwardCallwhisper.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TwiMLBins/forwardCallwhisper.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8603491" vertical-offset="0" max-vertical-offset="802">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="780">
               <caret line="46" column="2" selection-start-line="46" selection-start-column="2" selection-end-line="46" selection-end-column="2" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dialRecordWithAction" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TwiMLBins/dialRecordWithAction">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
-              <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+            <state vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="5040">
+              <caret line="14" column="52" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dialRecordCallerId" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TwiMLBins/dialRecordCallerId">
+      <file leaf-file-name="report1.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/report1.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="135">
-              <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+            <state vertical-scroll-proportion="6.362468" vertical-offset="0" max-vertical-offset="5040">
+              <caret line="330" column="0" selection-start-line="330" selection-start-column="0" selection-end-line="330" selection-end-column="0" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="report.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/report.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-42.5" vertical-offset="0" max-vertical-offset="5040">
+              <caret line="68" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="330" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -165,6 +158,7 @@
         <option value="$PROJECT_DIR$/TwiMLBins/DayHoursSelect" />
         <option value="$PROJECT_DIR$/TwiMLBins/testingvoice.js" />
         <option value="$PROJECT_DIR$/TwiMLBins/forwardCallwhisper.js" />
+        <option value="$PROJECT_DIR$/report1.php" />
       </list>
     </option>
   </component>
@@ -218,20 +212,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TwilioAppPHP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TwilioAppPHP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TwiMLBins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -244,6 +224,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/TwiMLBins" />
     </key>
   </component>
@@ -326,14 +307,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5040">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TwiMLBins/ForwardSmsMsg">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
@@ -432,9 +405,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/TwiMLBins/forwardCallwhisper.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8603491" vertical-offset="0" max-vertical-offset="802">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="780">
           <caret line="46" column="2" selection-start-line="46" selection-start-column="2" selection-end-line="46" selection-end-column="2" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="5040">
+          <caret line="14" column="52" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/report.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-42.5" vertical-offset="0" max-vertical-offset="5040">
+          <caret line="68" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="330" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/report1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="6.362468" vertical-offset="0" max-vertical-offset="5040">
+          <caret line="330" column="0" selection-start-line="330" selection-start-column="0" selection-end-line="330" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
