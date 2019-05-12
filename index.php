@@ -296,11 +296,7 @@ foreach ($client->recordings->read() as $recording) {
            				 if(array_key_exists($call->sid, $recording_array)){
      					 foreach($recording_array["$call->sid"] as $key=>$val){
      					     ?>
-
-     					     <audio controls>
-                              <source src="https://api.twilio.com/2010-04-01/Accounts/<?=$AccountSid?>/Recordings/<?=$val?>.mp3?Download=false" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                            </audio> or
+ or
      					     <a href="https://api.twilio.com/2010-04-01/Accounts/<?=$AccountSid?>/Recordings/<?=$val?>.mp3?Download=false" target="_blank">Listen Recording</a>
      					 <?php
      					 }
