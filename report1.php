@@ -277,7 +277,7 @@ $client = new Client($AccountSid, $AuthToken);
 
             try {
                 // Get Recent Calls
-  
+
             } catch (Exception $e) {
                 echo "Error: " . $e->getMessage();
             }
