@@ -211,8 +211,7 @@ $(function() {
         				<th class="numeric">Caller</th>
         				<th class="numeric">Called</th>
         				<th class="numeric">Duration</th>
-        				<th class="numeric">Caller Name</th>
-        				<th class="numeric">Recording</th>
+
         		</thead>
         		<tbody>
 <?php
@@ -290,18 +289,7 @@ foreach ($client->recordings->read() as $recording) {
         				<td data-title="Caller"><?php echo $call->from; ?></td>
         				<td data-title="Called" class="numeric"><?php echo $call->to; ?></td>
         				<td data-title="Duration" class="numeric"><?php echo $call->duration; ?> s</td>
-        				<td data-title="calleName" class="numeric"><?php echo $call->callerName; ?> </td>
-        				<td data-title="Recording" class="numeric">
-        				<?php
-           				 if(array_key_exists($call->sid, $recording_array)){
-     					 foreach($recording_array["$call->sid"] as $key=>$val){
-     					     ?>
- or
-     					     <a href="https://api.twilio.com/2010-04-01/Accounts/<?=$AccountSid?>/Recordings/<?=$val?>.mp3?Download=false" target="_blank">Listen Recording</a>
-     					 <?php
-     					 }
-        				 }
-        				?></td>
+
         			</tr>
 
 
