@@ -1,5 +1,6 @@
 <?php
-error_reporting(1);
+
+
 /* Get Twilio call logs. You can run this file by saving it
      * as call-log.php and running:
      *        php call-log.php
@@ -11,8 +12,8 @@ error_reporting(1);
     use Twilio\Rest\Client;
 
     // Step 2: Set our AccountSid and AuthToken from https://twilio.com/console
-    $AccountSid = "ACf4cceb2136327a42e60a17e36d034bda";
-    $AuthToken = "c3eaa566d6749452f7cd8d82c7221788";
+    $AccountSid = "AC004cae00c0a2c6c2327f67ad792b1196";
+    $AuthToken = "c072b52aba7ff103ff659142dfe8b3fa";
 
     // Step 3: Instantiate a new Twilio Rest Client
     $client = new Client($AccountSid, $AuthToken);
@@ -160,6 +161,9 @@ function checkAll(ele) {
 	}
 	?>
         </div>
+
+
+
         <div style="clear:both"></div>
         <div class="col-md-2">
 
@@ -199,7 +203,7 @@ $(function() {
         <div class="col-md-2">
 
           <button id="when" type="submit" value="search" name="when" class="btn btn-primary">SEARCH</button>
-
+          <button id="delete" type="submit" value="Delete" name="d" class="btn btn-primary">Delete</button>
         </div>
         </form>
         </div>
@@ -211,8 +215,7 @@ $(function() {
         				<th class="numeric">Caller</th>
         				<th class="numeric">Called</th>
         				<th class="numeric">Duration</th>
-        				<th class="numeric">Caller Name</th>
-        				<th class="numeric">Recording</th>
+
         		</thead>
         		<tbody>
 <?php
@@ -270,10 +273,7 @@ if (count($_POST['number']) == 0) {
 $_POST['number'] = $numeri;
 }
 
-foreach ($client->recordings->read() as $recording) {
-                            $recording_array[$recording->callSid][$count] = $recording->sid;
-                            $count++;
-                        }
+
 
     try {
         // Get Recent Calls
@@ -285,24 +285,13 @@ foreach ($client->recordings->read() as $recording) {
 ?>
 
 
-        			<tr>
-        				<td data-title="Date/Time"><?php echo $time; ?></td>
-        				<td data-title="Caller"><?php echo $call->from; ?></td>
-        				<td data-title="Called" class="numeric"><?php echo $call->to; ?></td>
-        				<td data-title="Duration" class="numeric"><?php echo $call->duration; ?> s</td>
-        				<td data-title="calleName" class="numeric"><?php echo $call->callerName; ?> </td>
-        				<td data-title="Recording" class="numeric">
-        				<?php
-           				 if(array_key_exists($call->sid, $recording_array)){
-     					 foreach($recording_array["$call->sid"] as $key=>$val){
-     					     ?>
- or
-     					     <a href="https://api.twilio.com/2010-04-01/Accounts/<?=$AccountSid?>/Recordings/<?=$val?>.mp3?Download=false" target="_blank">Listen Recording</a>
-     					 <?php
-     					 }
-        				 }
-        				?></td>
-        			</tr>
+<tr>
+  <td data-title="Date/Time"><?php echo $time; ?></td>
+  <td data-title="Caller"><?php echo $call->from; ?></td>
+  <td data-title="Called" class="numeric"><?php echo $call->to; ?></td>
+  <td data-title="Duration" class="numeric"><?php echo $call->duration; ?> s</td>
+
+</tr>
 
 
 <?php
