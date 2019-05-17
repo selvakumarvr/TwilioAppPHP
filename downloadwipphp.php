@@ -297,6 +297,8 @@ $_POST['number'] = $numeri;
         				<?php
            				 if(array_key_exists($call->sid, $recording_array)){
      					 foreach($recording_array["$call->sid"] as $key=>$val){
+						 
+						 echo $val;
      					     ?>
 
      					     <audio controls>
