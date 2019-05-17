@@ -215,6 +215,7 @@ $(function() {
         				<th class="numeric">Caller</th>
         				<th class="numeric">Called</th>
         				<th class="numeric">Duration</th>
+					<th class="numeric">URI</th>
 
         		</thead>
         		<tbody>
@@ -290,7 +291,7 @@ $_POST['number'] = $numeri;
   <td data-title="Caller"><?php echo $call->from; ?></td>
   <td data-title="Called" class="numeric"><?php echo $call->to; ?></td>
   <td data-title="Duration" class="numeric"><?php echo $call->duration; ?> s</td>
-
+  <td data-title="Duration" class="numeric"><?php echo $call->uri; ?> s</td>
 </tr>
 
 
