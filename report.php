@@ -293,18 +293,15 @@ foreach ($client->recordings->read() as $recording) {
         				<td data-title="calleName" class="numeric"><?php echo $call->callerName; ?> </td>
         				<td data-title="Recording" class="numeric">
         				<?php
-           				 if(array_key_exists($call->sid, $recording_array)){
-     					 foreach($recording_array["$call->sid"] as $key=>$val){
-     					     ?>
+           				     ?>
 
      					     <audio controls>
-                              <source src="https://api.twilio.com/2010-04-01/Accounts/<?=$AccountSid?>/Recordings/<?=$val?>.mp3?Download=false" type="audio/mpeg">
+                              <source src="https://api.twilio.com/2010-04-01/Accounts/<?=$AccountSid?>/Recordings/<?=$call->sid?>.mp3?Download=false" type="audio/mpeg">
                             Your browser does not support the audio element.
                             </audio> or
-     					     <a href="https://api.twilio.com/2010-04-01/Accounts/<?=$AccountSid?>/Recordings/<?=$val?>.mp3?Download=false" target="_blank">Listen Recording</a>
+     					     <a href="https://api.twilio.com/2010-04-01/Accounts/<?=$AccountSid?>/Recordings/<?=$call->sid?>.mp3?Download=false" target="_blank">Listen Recording</a>
      					 <?php
-     					 }
-        				 }
+     					
         				?></td>
         			</tr>
 
