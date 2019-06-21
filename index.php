@@ -150,12 +150,7 @@ function checkAll(ele) {
         foreach ($client->incomingPhoneNumbers->read() as $number) {
         $numeri[] = $number->phoneNumber;
         ?>
-            <div class="checkbox" style="float:left; width:10%">
-                <label>
-                    <input type="checkbox" name="number[]" value="<?php echo $number->phoneNumber; ?>" <?php if (in_array("$number->phoneNumber", $_POST['number'])) { echo "checked";} ?>>
-                    <span class="badge"><?php echo $number->phoneNumber; ?></span>
-                </label>
-            </div>
+            
         <?php
 	}
 	?>
@@ -287,7 +282,6 @@ $(function() {
 
                         if (($call->from == "+15202104242") || ($call->to == "+15202104242")) {
 
-                            print_r($call);
 
                             $number = $value;
                            // $name = $call->friendly_name;
