@@ -146,14 +146,7 @@ function checkAll(ele) {
                 </label>
         </div>
         <div style="clear:both"></div>
-<!--        --><?php
-//        foreach ($client->incomingPhoneNumbers->read() as $number) {
-//        $numeri[] = $number->phoneNumber;
-//        ?>
 
-        <?php
-	}
-	?>
         </div>
         <div style="clear:both"></div>
         <div class="col-md-2">
