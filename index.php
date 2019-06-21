@@ -291,12 +291,16 @@ $(function() {
                             $time = $call->startTime->format("Y-m-d H:i:s");
 
                         }
+                    }
+
+                }
                             ?>
 
 
                             <tr>
                                 <td data-title="Date/Time"><?php echo $value; ?></td>
-                                <td data-title="Called" class="numeric"><?php echo $count; ?></td>
+
+                                <td data-title="Called" class="numeric"><?php echo $count++; ?></td>
                                 <td data-title="Duration" class="numeric"><?php echo $total_time; ?> s</td>
 
                             </tr>
@@ -306,8 +310,8 @@ $(function() {
 
 //echo "Call from $call->from to $call->to at $time of length $call->duration \n";
 
-                    }
-                }
+
+
             } catch (Exception $e) {
                 echo "Error: " . $e->getMessage();
             }
