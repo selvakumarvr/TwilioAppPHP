@@ -307,7 +307,7 @@ $(function() {
 
                             </tr>
 
-<?
+<?php
 
                 $count=0;
                 $total_time=0;
@@ -341,7 +341,7 @@ $(function() {
 
                 </tr>
 
-<?
+<?php
                 $count=0;
                 $total_time=0;
                 foreach ($calls as $call) {
@@ -375,7 +375,7 @@ $(function() {
                 </tr>
 
 
-<?
+<?php
                 $count=0;
                 $total_time=0;
                 foreach ($calls as $call) {
@@ -408,7 +408,7 @@ $(function() {
 
                 </tr>
 
-<?
+<?php
 
                 $count=0;
                 $total_time=0;
@@ -442,7 +442,7 @@ $(function() {
 
                 </tr>
 
-<?
+<?php
 
                 $count=0;
                 $total_time=0;
@@ -477,7 +477,7 @@ $(function() {
                 </tr>
 
 
-<?
+<?php
                 $count=0;
                 $total_time=0;
                 foreach ($calls as $call) {
@@ -510,7 +510,7 @@ $(function() {
 
                 </tr>
 
-<?
+<?php
 
                 $count=0;
                 $total_time=0;
@@ -543,7 +543,7 @@ $(function() {
                     <td data-title="Duration" class="numeric"><?php echo $total_time; ?> s</td>
 
                 </tr>
-<?
+<?php
 
                 $count=0;
                 $total_time=0;
@@ -577,7 +577,7 @@ $(function() {
 
                 </tr>
 
-<?
+<?php
 
 
             $count=0;
@@ -612,7 +612,7 @@ $(function() {
 
             </tr>
 
-<?
+<?php
 
 
             $count=0;
@@ -648,7 +648,7 @@ $(function() {
             </tr>
 
 
-<?
+<?php
 
             $count=0;
             $total_time=0;
@@ -683,7 +683,7 @@ $(function() {
             </tr>
 
 
-<?
+<?php
 
             $count=0;
             $total_time=0;
