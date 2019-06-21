@@ -287,8 +287,10 @@ $(function() {
                     foreach ($_POST['number'] as $value) {
                         if (($call->from == $value) || ($call->to == $value)) {
 
+                            print_r($call);
+
                             $number = $value;
-                            $name = $call->friendly_name;
+                           // $name = $call->friendly_name;
                             $count++;
                             $total_time=$total_time+$call->duration;
                             $time = $call->startTime->format("Y-m-d H:i:s");
@@ -298,6 +300,7 @@ $(function() {
 
                 }
                             ?>
+
 
 
                             <tr>
