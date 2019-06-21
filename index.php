@@ -146,11 +146,11 @@ function checkAll(ele) {
                 </label>
         </div>
         <div style="clear:both"></div>
-        <?php
-        foreach ($client->incomingPhoneNumbers->read() as $number) {
-        $numeri[] = $number->phoneNumber;
-        ?>
-            
+<!--        --><?php
+//        foreach ($client->incomingPhoneNumbers->read() as $number) {
+//        $numeri[] = $number->phoneNumber;
+//        ?>
+
         <?php
 	}
 	?>
@@ -265,10 +265,10 @@ $(function() {
                 $_POST['number'] = $numeri;
             }
 
-            foreach ($client->recordings->read() as $recording) {
-                $recording_array[$recording->callSid][$count] = $recording->sid;
-                $count++;
-            }
+//            foreach ($client->recordings->read() as $recording) {
+//                $recording_array[$recording->callSid][$count] = $recording->sid;
+//                $count++;
+//            }
 
             try {
 
@@ -300,12 +300,426 @@ $(function() {
                             <tr>
                                 <td data-title="Date/Time"><?php echo "Maricopa-FB"; ?></td>
 
-                                <td data-title="Date/Time"><?php echo $value; ?></td>
+                                <td data-title="Date/Time"><?php echo $number; ?></td>
 
                                 <td data-title="Called" class="numeric"><?php echo $count++; ?></td>
                                 <td data-title="Duration" class="numeric"><?php echo $total_time; ?> s</td>
 
                             </tr>
+
+<?
+
+                $count=0;
+                $total_time=0;
+                foreach ($calls as $call) {
+
+
+                if (($call->from == "+15052070554") || ($call->to == "+15052070554")) {
+
+
+                $number = $value;
+                // $name = $call->friendly_name;
+                $count++;
+                $total_time=$total_time+$call->duration;
+                $time = $call->startTime->format("Y-m-d H:i:s");
+
+                }
+                }
+
+
+                ?>
+
+
+
+                <tr>
+                    <td data-title="Date/Time"><?php echo "Santa Fe-FB"; ?></td>
+
+                    <td data-title="Date/Time"><?php echo $number; ?></td>
+
+                    <td data-title="Called" class="numeric"><?php echo $count++; ?></td>
+                    <td data-title="Duration" class="numeric"><?php echo $total_time; ?> s</td>
+
+                </tr>
+
+<?
+                $count=0;
+                $total_time=0;
+                foreach ($calls as $call) {
+
+
+                if (($call->from == "+15052070584") || ($call->to == "+15052070584")) {
+
+
+                $number = $value;
+                // $name = $call->friendly_name;
+                $count++;
+                $total_time=$total_time+$call->duration;
+                $time = $call->startTime->format("Y-m-d H:i:s");
+
+                }
+                }
+
+
+                ?>
+
+
+
+                <tr>
+                    <td data-title="Date/Time"><?php echo "Valencia-FB"; ?></td>
+
+                    <td data-title="Date/Time"><?php echo $number; ?></td>
+
+                    <td data-title="Called" class="numeric"><?php echo $count++; ?></td>
+                    <td data-title="Duration" class="numeric"><?php echo $total_time; ?> s</td>
+
+                </tr>
+
+
+<?
+                $count=0;
+                $total_time=0;
+                foreach ($calls as $call) {
+
+
+                if (($call->from == "+14803767656") || ($call->to == "+14803767656")) {
+
+
+                $number = $value;
+                // $name = $call->friendly_name;
+                $count++;
+                $total_time=$total_time+$call->duration;
+                $time = $call->startTime->format("Y-m-d H:i:s");
+
+                }
+                }
+
+
+                ?>
+
+
+
+                <tr>
+                    <td data-title="Date/Time"><?php echo "Novelly - Google Ads"; ?></td>
+
+                    <td data-title="Date/Time"><?php echo $number; ?></td>
+
+                    <td data-title="Called" class="numeric"><?php echo $count++; ?></td>
+                    <td data-title="Duration" class="numeric"><?php echo $total_time; ?> s</td>
+
+                </tr>
+
+<?
+
+                $count=0;
+                $total_time=0;
+                foreach ($calls as $call) {
+
+
+                if (($call->from == "+15052070183") || ($call->to == "+15052070183")) {
+
+
+                $number = $value;
+                // $name = $call->friendly_name;
+                $count++;
+                $total_time=$total_time+$call->duration;
+                $time = $call->startTime->format("Y-m-d H:i:s");
+
+                }
+                }
+
+
+                ?>
+
+
+
+                <tr>
+                    <td data-title="Date/Time"><?php echo "Bosque-FB"; ?></td>
+
+                    <td data-title="Date/Time"><?php echo $number; ?></td>
+
+                    <td data-title="Called" class="numeric"><?php echo $count++; ?></td>
+                    <td data-title="Duration" class="numeric"><?php echo $total_time; ?> s</td>
+
+                </tr>
+
+<?
+
+                $count=0;
+                $total_time=0;
+                foreach ($calls as $call) {
+
+
+                if (($call->from == "+16023537238") || ($call->to == "+16023537238")) {
+
+
+                $number = $value;
+                // $name = $call->friendly_name;
+                $count++;
+                $total_time=$total_time+$call->duration;
+                $time = $call->startTime->format("Y-m-d H:i:s");
+
+                }
+                }
+
+
+                ?>
+
+
+
+                <tr>
+                    <td data-title="Date/Time"><?php echo "Uptown-FB"; ?></td>
+
+                    <td data-title="Date/Time"><?php echo $number; ?></td>
+
+                    <td data-title="Called" class="numeric"><?php echo $count++; ?></td>
+                    <td data-title="Duration" class="numeric"><?php echo $total_time; ?> s</td>
+
+                </tr>
+
+
+<?
+                $count=0;
+                $total_time=0;
+                foreach ($calls as $call) {
+
+
+                if (($call->from == "+14804709239") || ($call->to == "+14804709239")) {
+
+
+                $number = $value;
+                // $name = $call->friendly_name;
+                $count++;
+                $total_time=$total_time+$call->duration;
+                $time = $call->startTime->format("Y-m-d H:i:s");
+
+                }
+                }
+
+
+                ?>
+
+
+
+                <tr>
+                    <td data-title="Date/Time"><?php echo "Progressive-FB"; ?></td>
+
+                    <td data-title="Date/Time"><?php echo $number; ?></td>
+
+                    <td data-title="Called" class="numeric"><?php echo $count++; ?></td>
+                    <td data-title="Duration" class="numeric"><?php echo $total_time; ?> s</td>
+
+                </tr>
+
+<?
+
+                $count=0;
+                $total_time=0;
+                foreach ($calls as $call) {
+
+
+                if (($call->from == "+15202104165") || ($call->to == "+15202104165")) {
+
+
+                $number = $value;
+                // $name = $call->friendly_name;
+                $count++;
+                $total_time=$total_time+$call->duration;
+                $time = $call->startTime->format("Y-m-d H:i:s");
+
+                }
+                }
+
+
+                ?>
+
+
+
+                <tr>
+                    <td data-title="Date/Time"><?php echo "Delicate-FB"; ?></td>
+
+                    <td data-title="Date/Time"><?php echo $number; ?></td>
+
+                    <td data-title="Called" class="numeric"><?php echo $count++; ?></td>
+                    <td data-title="Duration" class="numeric"><?php echo $total_time; ?> s</td>
+
+                </tr>
+<?
+
+                $count=0;
+                $total_time=0;
+                foreach ($calls as $call) {
+
+
+                if (($call->from == "+15202104352") || ($call->to == "+15202104352")) {
+
+
+                $number = $value;
+                // $name = $call->friendly_name;
+                $count++;
+                $total_time=$total_time+$call->duration;
+                $time = $call->startTime->format("Y-m-d H:i:s");
+
+                }
+                }
+
+
+                ?>
+
+
+
+                <tr>
+                    <td data-title="Date/Time"><?php echo "Smile Lines-FB"; ?></td>
+
+                    <td data-title="Date/Time"><?php echo $number; ?></td>
+
+                    <td data-title="Called" class="numeric"><?php echo $count++; ?></td>
+                    <td data-title="Duration" class="numeric"><?php echo $total_time; ?> s</td>
+
+                </tr>
+
+<?
+
+
+            $count=0;
+            $total_time=0;
+            foreach ($calls as $call) {
+
+
+            if (($call->from == "+16024289093") || ($call->to == "+16024289093")) {
+
+
+            $number = $value;
+            // $name = $call->friendly_name;
+            $count++;
+            $total_time=$total_time+$call->duration;
+            $time = $call->startTime->format("Y-m-d H:i:s");
+
+            }
+            }
+
+
+            ?>
+
+
+
+            <tr>
+                <td data-title="Date/Time"><?php echo "Gentle Hands-FB"; ?></td>
+
+                <td data-title="Date/Time"><?php echo $number; ?></td>
+
+                <td data-title="Called" class="numeric"><?php echo $count++; ?></td>
+                <td data-title="Duration" class="numeric"><?php echo $total_time; ?> s</td>
+
+            </tr>
+
+<?
+
+
+            $count=0;
+            $total_time=0;
+            foreach ($calls as $call) {
+
+
+            if (($call->from == "+14804626113") || ($call->to == "+14804626113")) {
+
+
+            $number = $value;
+            // $name = $call->friendly_name;
+            $count++;
+            $total_time=$total_time+$call->duration;
+            $time = $call->startTime->format("Y-m-d H:i:s");
+
+            }
+            }
+
+
+            ?>
+
+
+
+            <tr>
+                <td data-title="Date/Time"><?php echo "Scottsdale-FB"; ?></td>
+
+                <td data-title="Date/Time"><?php echo $number; ?></td>
+
+                <td data-title="Called" class="numeric"><?php echo $count++; ?></td>
+                <td data-title="Duration" class="numeric"><?php echo $total_time; ?> s</td>
+
+            </tr>
+
+
+<?
+
+            $count=0;
+            $total_time=0;
+            foreach ($calls as $call) {
+
+
+            if (($call->from == "+14806050584") || ($call->to == "+14806050584")) {
+
+
+            $number = $value;
+            // $name = $call->friendly_name;
+            $count++;
+            $total_time=$total_time+$call->duration;
+            $time = $call->startTime->format("Y-m-d H:i:s");
+
+            }
+            }
+
+
+            ?>
+
+
+
+            <tr>
+                <td data-title="Date/Time"><?php echo "Novelly - FB"; ?></td>
+
+                <td data-title="Date/Time"><?php echo $number; ?></td>
+
+                <td data-title="Called" class="numeric"><?php echo $count++; ?></td>
+                <td data-title="Duration" class="numeric"><?php echo $total_time; ?> s</td>
+
+            </tr>
+
+
+<?
+
+            $count=0;
+            $total_time=0;
+            foreach ($calls as $call) {
+
+
+            if (($call->from == "+14803728498") || ($call->to == "+14803728498")) {
+
+
+            $number = $value;
+            // $name = $call->friendly_name;
+            $count++;
+            $total_time=$total_time+$call->duration;
+            $time = $call->startTime->format("Y-m-d H:i:s");
+
+            }
+            }
+
+
+            ?>
+
+
+
+            <tr>
+                <td data-title="Date/Time"><?php echo "Johnson Ranch-AdWords"; ?></td>
+
+                <td data-title="Date/Time"><?php echo $number; ?></td>
+
+                <td data-title="Called" class="numeric"><?php echo $count++; ?></td>
+                <td data-title="Duration" class="numeric"><?php echo $total_time; ?> s</td>
+
+            </tr>
+
+
+
+
 
 
 <?php
@@ -322,109 +736,7 @@ $(function() {
         </table>
     </div>
 
-        <div id="no-more-tables"><br/><br/>
-            <table class="col-md-12 table-bordered table-striped table-condensed cf">
-        		<thead class="cf">
-        			<tr>
-        				<th class="numeric">Date/Time</th>
-        				<th class="numeric">Caller</th>
-        				<th class="numeric">Called</th>
-        				<th class="numeric">Duration</th>
 
-        		</thead>
-        		<tbody>
-<?php
-
-if ($_POST["when"] == 'today'){
-
-   $calls = $client->calls->read(
-     array("status" => "completed", "starttimeAfter" => date("Y-m-d"))
-   );
-
-} else if ($_POST["when"] == 'yesterday') {
-	$calls = $client->calls->read(
-      array("status" => "completed", "starttimeAfter" => date("Y-m-d", strtotime("-1 days")),"starttimeBefore" => date("Y-m-d"))
-   );
-} else if ($_POST["when"] == 'thisweek') {
-	$calls = $client->calls->read(
-      array("status" => "completed", "starttimeAfter" => date("Y-m-d", strtotime("previous monday")),"starttimeBefore" => date("Y-m-d", strtotime("next sunday")))
-   );
-} else if ($_POST["when"] == 'thismonth') {
-
-           $firstDayUTS = mktime (0, 0, 0, date("m"), 1, date("Y"));
-           $lastDayUTS = mktime (0, 0, 0, date("m"), date('t'), date("Y"));
-
-           $firstDay = date("Y-m-d", $firstDayUTS);
-           $lastDay = date("Y-m-d", $lastDayUTS);
-	$calls = $client->calls->read(
-      array("status" => "completed", "starttimeAfter" => $firstDay,"starttimeBefore" => $lastDay)
-   );
-} else if ($_POST["when"] == 'lastmonth') {
-
-           $firstDayUTS = mktime (0, 0, 0, date("m")-1, 1, date("Y"));
-           $lastDayUTS = mktime (0, 0, 0, date("m")-1, date('t'), date("Y"));
-
-           $firstDay = date("Y-m-d", $firstDayUTS);
-           $lastDay = date("Y-m-d", $lastDayUTS);
-	$calls = $client->calls->read(
-      array("status" => "completed", "starttimeAfter" => $firstDay,"starttimeBefore" => $lastDay)
-   );
-} else if ($_POST["when"] == 'search') {
-
-           $pieces = explode(" - ", $_POST['daterange']);
-
-           $calls = $client->calls->read(
-      array("status" => "completed", "starttimeAfter" => $pieces[0],"starttimeBefore" => $pieces[1])
-   );
-} else {
-
-   $calls = $client->calls->read(
-     array("status" => "completed", "starttimeAfter" => date("Y-m-d"))
-   );
-}
-
-
-if (count($_POST['number']) == 0) {
-$_POST['number'] = $numeri;
-}
-
-foreach ($client->recordings->read() as $recording) {
-                            $recording_array[$recording->callSid][$count] = $recording->sid;
-                            $count++;
-                        }
-
-    try {
-        // Get Recent Calls
-        foreach ($calls as $call) {
-            foreach ($_POST['number'] as $value) {
-                if (($call->from == $value) || ($call->to == $value)) {
-
-            $time = $call->startTime->format("Y-m-d H:i:s");
-?>
-
-
-        			<tr>
-        				<td data-title="Date/Time"><?php echo $time; ?></td>
-        				<td data-title="Caller"><?php echo $call->from; ?></td>
-        				<td data-title="Called" class="numeric"><?php echo $call->to; ?></td>
-        				<td data-title="Duration" class="numeric"><?php echo $call->duration; ?> s</td>
-
-        			</tr>
-
-
-<?php
-
-//echo "Call from $call->from to $call->to at $time of length $call->duration \n";
-					}
-        }
-        }
-    } catch (Exception $e) {
-        echo "Error: " . $e->getMessage();
-    }
-?>
-        		</tbody>
-        	</table>
-        </div>
     </div>
 </div>
 
