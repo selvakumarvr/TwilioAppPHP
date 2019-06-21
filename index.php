@@ -279,9 +279,10 @@ $(function() {
 
 
                 // Get Recent Calls
+                $count=0;
+                $total_time=0;
                 foreach ($calls as $call) {
-                    $count=0;
-                    $total_time=0;
+
                     foreach ($_POST['number'] as $value) {
                         if (($call->from == $value) || ($call->to == $value)) {
 
