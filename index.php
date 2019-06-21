@@ -207,7 +207,8 @@ $(function() {
         <table class="col-md-12 table-bordered table-striped table-condensed cf">
             <thead class="cf">
             <tr>
-                <th class="numeric">PhoneNumber</th>
+                <th class="numeric">Friendly Name</th>
+                <th class="numeric">Phone Number</th>
                 <th class="numeric">No of Calls</th>
 
                 <th class="numeric">Duration</th>
@@ -287,6 +288,7 @@ $(function() {
                         if (($call->from == $value) || ($call->to == $value)) {
 
                             $number = $value;
+                            $name = $call->friendly_name;
                             $count++;
                             $total_time=$total_time+$call->duration;
                             $time = $call->startTime->format("Y-m-d H:i:s");
@@ -299,6 +301,8 @@ $(function() {
 
 
                             <tr>
+                                <td data-title="Date/Time"><?php echo $name; ?></td>
+
                                 <td data-title="Date/Time"><?php echo $value; ?></td>
 
                                 <td data-title="Called" class="numeric"><?php echo $count++; ?></td>
