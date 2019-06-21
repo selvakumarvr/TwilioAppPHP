@@ -139,12 +139,7 @@ function checkAll(ele) {
         <form method="post">
         <div class="form-group badge-checkboxes">
 
-        <div class="checkbox" style="float:left; width:10%">
-                <label>
-                <INPUT type="checkbox" onchange="checkAll(this)" name="chk[]" checked/>
-                <span class="badge">Check/Uncheck All</span>
-                </label>
-        </div>
+
         <div style="clear:both"></div>
 
         </div>
@@ -293,7 +288,7 @@ $(function() {
                             <tr>
                                 <td data-title="Date/Time"><?php echo "Maricopa-FB"; ?></td>
 
-                                <td data-title="Date/Time"><?php echo $number; ?></td>
+                                <td data-title="Date/Time"><?php echo "+15202104242"; ?></td>
 
                                 <td data-title="Called" class="numeric"><?php echo $count++; ?></td>
                                 <td data-title="Duration" class="numeric"><?php echo $total_time; ?> s</td>
@@ -327,7 +322,7 @@ $(function() {
                 <tr>
                     <td data-title="Date/Time"><?php echo "Santa Fe-FB"; ?></td>
 
-                    <td data-title="Date/Time"><?php echo $number; ?></td>
+                    <td data-title="Date/Time"><?php echo "+15052070554"; ?></td>
 
                     <td data-title="Called" class="numeric"><?php echo $count++; ?></td>
                     <td data-title="Duration" class="numeric"><?php echo $total_time; ?> s</td>
@@ -360,7 +355,7 @@ $(function() {
                 <tr>
                     <td data-title="Date/Time"><?php echo "Valencia-FB"; ?></td>
 
-                    <td data-title="Date/Time"><?php echo $number; ?></td>
+                    <td data-title="Date/Time"><?php echo "+15052070584"; ?></td>
 
                     <td data-title="Called" class="numeric"><?php echo $count++; ?></td>
                     <td data-title="Duration" class="numeric"><?php echo $total_time; ?> s</td>
@@ -394,7 +389,7 @@ $(function() {
                 <tr>
                     <td data-title="Date/Time"><?php echo "Novelly - Google Ads"; ?></td>
 
-                    <td data-title="Date/Time"><?php echo $number; ?></td>
+                    <td data-title="Date/Time"><?php echo "+14803767656"; ?></td>
 
                     <td data-title="Called" class="numeric"><?php echo $count++; ?></td>
                     <td data-title="Duration" class="numeric"><?php echo $total_time; ?> s</td>
@@ -428,7 +423,7 @@ $(function() {
                 <tr>
                     <td data-title="Date/Time"><?php echo "Bosque-FB"; ?></td>
 
-                    <td data-title="Date/Time"><?php echo $number; ?></td>
+                    <td data-title="Date/Time"><?php echo "+15052070183"; ?></td>
 
                     <td data-title="Called" class="numeric"><?php echo $count++; ?></td>
                     <td data-title="Duration" class="numeric"><?php echo $total_time; ?> s</td>
@@ -462,7 +457,7 @@ $(function() {
                 <tr>
                     <td data-title="Date/Time"><?php echo "Uptown-FB"; ?></td>
 
-                    <td data-title="Date/Time"><?php echo $number; ?></td>
+                    <td data-title="Date/Time"><?php echo "+16023537238"; ?></td>
 
                     <td data-title="Called" class="numeric"><?php echo $count++; ?></td>
                     <td data-title="Duration" class="numeric"><?php echo $total_time; ?> s</td>
@@ -496,7 +491,7 @@ $(function() {
                 <tr>
                     <td data-title="Date/Time"><?php echo "Progressive-FB"; ?></td>
 
-                    <td data-title="Date/Time"><?php echo $number; ?></td>
+                    <td data-title="Date/Time"><?php echo "+14804709239"; ?></td>
 
                     <td data-title="Called" class="numeric"><?php echo $count++; ?></td>
                     <td data-title="Duration" class="numeric"><?php echo $total_time; ?> s</td>
@@ -530,7 +525,7 @@ $(function() {
                 <tr>
                     <td data-title="Date/Time"><?php echo "Delicate-FB"; ?></td>
 
-                    <td data-title="Date/Time"><?php echo $number; ?></td>
+                    <td data-title="Date/Time"><?php echo "+15202104165"; ?></td>
 
                     <td data-title="Called" class="numeric"><?php echo $count++; ?></td>
                     <td data-title="Duration" class="numeric"><?php echo $total_time; ?> s</td>
@@ -563,7 +558,7 @@ $(function() {
                 <tr>
                     <td data-title="Date/Time"><?php echo "Smile Lines-FB"; ?></td>
 
-                    <td data-title="Date/Time"><?php echo $number; ?></td>
+                    <td data-title="Date/Time"><?php echo "+15202104352"; ?></td>
 
                     <td data-title="Called" class="numeric"><?php echo $count++; ?></td>
                     <td data-title="Duration" class="numeric"><?php echo $total_time; ?> s</td>
@@ -598,7 +593,7 @@ $(function() {
             <tr>
                 <td data-title="Date/Time"><?php echo "Gentle Hands-FB"; ?></td>
 
-                <td data-title="Date/Time"><?php echo $number; ?></td>
+                <td data-title="Date/Time"><?php echo "+16024289093"; ?></td>
 
                 <td data-title="Called" class="numeric"><?php echo $count++; ?></td>
                 <td data-title="Duration" class="numeric"><?php echo $total_time; ?> s</td>
@@ -633,7 +628,7 @@ $(function() {
             <tr>
                 <td data-title="Date/Time"><?php echo "Scottsdale-FB"; ?></td>
 
-                <td data-title="Date/Time"><?php echo $number; ?></td>
+                <td data-title="Date/Time"><?php echo "+14804626113"; ?></td>
 
                 <td data-title="Called" class="numeric"><?php echo $count++; ?></td>
                 <td data-title="Duration" class="numeric"><?php echo $total_time; ?> s</td>
@@ -668,7 +663,7 @@ $(function() {
             <tr>
                 <td data-title="Date/Time"><?php echo "Novelly - FB"; ?></td>
 
-                <td data-title="Date/Time"><?php echo $number; ?></td>
+                <td data-title="Date/Time"><?php echo "+14806050584"; ?></td>
 
                 <td data-title="Called" class="numeric"><?php echo $count++; ?></td>
                 <td data-title="Duration" class="numeric"><?php echo $total_time; ?> s</td>
@@ -703,7 +698,7 @@ $(function() {
             <tr>
                 <td data-title="Date/Time"><?php echo "Johnson Ranch-AdWords"; ?></td>
 
-                <td data-title="Date/Time"><?php echo $number; ?></td>
+                <td data-title="Date/Time"><?php echo "+14803728498"; ?></td>
 
                 <td data-title="Called" class="numeric"><?php echo $count++; ?></td>
                 <td data-title="Duration" class="numeric"><?php echo $total_time; ?> s</td>
