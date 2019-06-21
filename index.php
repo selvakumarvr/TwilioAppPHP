@@ -284,8 +284,8 @@ $(function() {
                 $total_time=0;
                 foreach ($calls as $call) {
 
-                    foreach ($_POST['number'] as $value) {
-                        if (($call->from == $value) || ($call->to == $value)) {
+
+                        if (($call->from == "+15202104242") || ($call->to == "+15202104242")) {
 
                             print_r($call);
 
@@ -298,13 +298,13 @@ $(function() {
                         }
                     }
 
-                }
+
                             ?>
 
 
 
                             <tr>
-                                <td data-title="Date/Time"><?php echo $name; ?></td>
+                                <td data-title="Date/Time"><?php echo "Maricopa-FB"; ?></td>
 
                                 <td data-title="Date/Time"><?php echo $value; ?></td>
 
