@@ -1,5 +1,5 @@
 <?php
-error_reporting(1);
+error_reporting(0);
 /* Get Twilio call logs. You can run this file by saving it
      * as call-log.php and running:
      *        php call-log.php
@@ -203,6 +203,119 @@ $(function() {
         </div>
         </form>
         </div>
+    <div id="no-more-tables"><br/><br/>
+        <table class="col-md-12 table-bordered table-striped table-condensed cf">
+            <thead class="cf">
+            <tr>
+                <th class="numeric">PhoneNumber</th>
+                <th class="numeric">No of Calls</th>
+
+                <th class="numeric">Duration</th>
+
+            </thead>
+            <tbody>
+            <?php
+
+            if ($_POST["when"] == 'today'){
+
+                $calls = $client->calls->read(
+                    array("status" => "completed", "starttimeAfter" => date("Y-m-d"))
+                );
+
+            } else if ($_POST["when"] == 'yesterday') {
+                $calls = $client->calls->read(
+                    array("status" => "completed", "starttimeAfter" => date("Y-m-d", strtotime("-1 days")),"starttimeBefore" => date("Y-m-d"))
+                );
+            } else if ($_POST["when"] == 'thisweek') {
+                $calls = $client->calls->read(
+                    array("status" => "completed", "starttimeAfter" => date("Y-m-d", strtotime("previous monday")),"starttimeBefore" => date("Y-m-d", strtotime("next sunday")))
+                );
+            } else if ($_POST["when"] == 'thismonth') {
+
+                $firstDayUTS = mktime (0, 0, 0, date("m"), 1, date("Y"));
+                $lastDayUTS = mktime (0, 0, 0, date("m"), date('t'), date("Y"));
+
+                $firstDay = date("Y-m-d", $firstDayUTS);
+                $lastDay = date("Y-m-d", $lastDayUTS);
+                $calls = $client->calls->read(
+                    array("status" => "completed", "starttimeAfter" => $firstDay,"starttimeBefore" => $lastDay)
+                );
+            } else if ($_POST["when"] == 'lastmonth') {
+
+                $firstDayUTS = mktime (0, 0, 0, date("m")-1, 1, date("Y"));
+                $lastDayUTS = mktime (0, 0, 0, date("m")-1, date('t'), date("Y"));
+
+                $firstDay = date("Y-m-d", $firstDayUTS);
+                $lastDay = date("Y-m-d", $lastDayUTS);
+                $calls = $client->calls->read(
+                    array("status" => "completed", "starttimeAfter" => $firstDay,"starttimeBefore" => $lastDay)
+                );
+            } else if ($_POST["when"] == 'search') {
+
+                $pieces = explode(" - ", $_POST['daterange']);
+
+                $calls = $client->calls->read(
+                    array("status" => "completed", "starttimeAfter" => $pieces[0],"starttimeBefore" => $pieces[1])
+                );
+            } else {
+
+                $calls = $client->calls->read(
+                    array("status" => "completed", "starttimeAfter" => date("Y-m-d"))
+                );
+            }
+
+
+            if (count($_POST['number']) == 0) {
+                $_POST['number'] = $numeri;
+            }
+
+            foreach ($client->recordings->read() as $recording) {
+                $recording_array[$recording->callSid][$count] = $recording->sid;
+                $count++;
+            }
+
+            try {
+
+
+
+                // Get Recent Calls
+                foreach ($calls as $call) {
+                    $count=0;
+                    $total_time=0;
+                    foreach ($_POST['number'] as $value) {
+                        if (($call->from == $value) || ($call->to == $value)) {
+
+                            $number = $value;
+                            $count++;
+                            $total_time=$total_time+$call->duration;
+                            $time = $call->startTime->format("Y-m-d H:i:s");
+
+                        }
+                            ?>
+
+
+                            <tr>
+                                <td data-title="Date/Time"><?php echo $value; ?></td>
+                                <td data-title="Called" class="numeric"><?php echo $count; ?></td>
+                                <td data-title="Duration" class="numeric"><?php echo $total_time; ?> s</td>
+
+                            </tr>
+
+
+<?php
+
+//echo "Call from $call->from to $call->to at $time of length $call->duration \n";
+
+                    }
+                }
+            } catch (Exception $e) {
+                echo "Error: " . $e->getMessage();
+            }
+            ?>
+            </tbody>
+        </table>
+    </div>
+
         <div id="no-more-tables"><br/><br/>
             <table class="col-md-12 table-bordered table-striped table-condensed cf">
         		<thead class="cf">
