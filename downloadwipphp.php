@@ -283,6 +283,7 @@ $_POST['number'] = $numeri;
                 if (($call->from == $value) || ($call->to == $value)) {
 
             $time = $call->startTime->format("Y-m-d H:i:s");
+			print_r($call);
 ?>
 
 
