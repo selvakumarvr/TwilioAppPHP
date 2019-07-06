@@ -12,7 +12,7 @@ error_reporting(0);
 
     // Step 2: Set our AccountSid and AuthToken from https://twilio.com/console
     $AccountSid = "ACf4cceb2136327a42e60a17e36d034bda";
-    $AuthToken = "c3eaa566d6749452f7cd8d82c7221788";
+    $AuthToken = "c631d4724f244c61e335894af4d2d420";
 
     // Step 3: Instantiate a new Twilio Rest Client
     $client = new Client($AccountSid, $AuthToken);
